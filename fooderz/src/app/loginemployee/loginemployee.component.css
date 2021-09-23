@@ -1,0 +1,58 @@
+.fourth{
+    border: 10px;
+    border-inline: initial;
+    position: absolute;
+    left: 13CM;
+    top:3cm;
+    
+}
+.bg-img {
+    background-image: url("https://st.depositphotos.com/3147737/4947/i/600/depositphotos_49471133-stock-photo-hyderabadi-biryani-a-popular-chicken.jpg");
+
+min-height: 450px;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: 1300px 500px;
+position: relative;
+
+  }
+.labell{
+    background-color: #16aa74;
+    color: white;
+    padding: 17px 100px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+    opacity: 0.9;
+    size:1cm
+
+}
+.labelll{
+    background-color: #10ac73;
+    color: white;
+    padding: 17px 81px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    opacity: 0.9;
+
+}
+.boxess{
+    height:1cm;
+    width:6.4cm;
+
+}
+.login
+{
+    background-color: #1b976a;
+    color: white;
+    padding: 14px 38px;
+    border: none;
+    cursor: pointer;
+    width: 70%;
+    opacity: 0.9;
+    size:2cm;
+    
+}
