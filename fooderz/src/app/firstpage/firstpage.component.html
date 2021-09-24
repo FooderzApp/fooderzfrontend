@@ -9,13 +9,13 @@
     .bg-img {
       background-image: url("https://st.depositphotos.com/3147737/4947/i/600/depositphotos_49471133-stock-photo-hyderabadi-biryani-a-popular-chicken.jpg");
 
-  min-height: 450px;
+  min-height:500px;
 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1300px 500px;
-  position: relative;
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
 
     }
     * {
@@ -29,6 +29,12 @@
   max-width: 300px;
   padding: 16px;
 }
+
+button:hover { 
+          opacity: 0.7; 
+      } 
+
+
 .first,.second {
   background-color: #04AA6D;
   color: white;
@@ -48,10 +54,11 @@
   <div class="bg-img">
     <form  class="container">
       <nav>
-      <button type="submit" class="first" >Are you an employee?</button>
+      <a routerLink='/loginemployee' ><button type="submit" class="first" >Are you an employee?</button></a>
+  
       <br><br>
   
-      <button type="submit" class="second">Are you a customer?</button>
+      <a routerLink="/logincustomer" ><button type="submit" class="second">Are you a customer?</button></a>
     </nav>
     </form>
   </div>

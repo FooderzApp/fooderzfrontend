@@ -34,8 +34,8 @@ Body {
      
    .container { 
           padding: 10px; 
-          
           border: 5px;
+        
          border-inline: initial;
          position: absolute;
         left: 13CM;
@@ -56,7 +56,3 @@ Body {
           position: relative;
         }
          
-        
-
-      
-   
