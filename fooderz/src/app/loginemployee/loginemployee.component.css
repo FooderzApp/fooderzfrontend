@@ -1,58 +1,62 @@
-.fourth{
-    border: 10px;
-    border-inline: initial;
-    position: absolute;
-    left: 13CM;
-    top:3cm;
-    
-}
-.bg-img {
-    background-image: url("https://st.depositphotos.com/3147737/4947/i/600/depositphotos_49471133-stock-photo-hyderabadi-biryani-a-popular-chicken.jpg");
-
-min-height: 450px;
-
-/* Center and scale the image nicely */
-background-position: center;
-background-repeat: no-repeat;
-background-size: 1300px 500px;
-position: relative;
-
+Body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: pink;
   }
-.labell{
-    background-color: #16aa74;
-    color: white;
-    padding: 17px 100px;
-    border: none;
-    cursor: pointer;
-    width: 50%;
-    opacity: 0.9;
-    size:1cm
+  button { 
+         background-color: #4CAF50; 
+         width: 100%;
+          color:blue; 
+          padding: 15px; 
+          margin: 10px 0px; 
+          border: none; 
+          cursor: pointer; 
+           } 
+   form { 
+          border: 3px solid #f1f1f1; 
+      } 
+   input[type=text], input[type=password] { 
+          width: 100%; 
+          margin: 8px 0;
+          padding: 12px 20px; 
+          display: inline-block; 
+          border: 2px solid green; 
+          box-sizing: border-box; 
+      }
+   button:hover { 
+          opacity: 0.7; 
+      } 
+    .cancelbtn { 
+          width: auto; 
+          padding: 10px 18px;
+          margin: 10px 5px;
+      } 
+        
+     
+   .container { 
+          padding: 10px; 
+          background-color:lavender;
+          border: 5px;
+         border-inline: initial;
+         position: absolute;
+        left: 10CM;
+        top:4cm;
+        width:10cm;
+        
 
-}
-.labelll{
-    background-color: #10ac73;
-    color: white;
-    padding: 17px 81px;
-    border: none;
-    cursor: pointer;
-    width: 70%;
-    opacity: 0.9;
+      } 
+      .second {
 
-}
-.boxess{
-    height:1cm;
-    width:6.4cm;
+          background-image: url('https://st.depositphotos.com/3147737/4947/i/600/depositphotos_49471133-stock-photo-hyderabadi-biryani-a-popular-chicken.jpg');
+          min-height:560px;
 
-}
-.login
-{
-    background-color: #1b976a;
-    color: white;
-    padding: 14px 38px;
-    border: none;
-    cursor: pointer;
-    width: 70%;
-    opacity: 0.9;
-    size:2cm;
-    
-}
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+         
+        
+
+      
+   
