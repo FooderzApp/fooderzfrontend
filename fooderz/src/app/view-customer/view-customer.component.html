@@ -1,0 +1,19 @@
+
+<table class="table table-light">
+    <thead class="thead-light">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>UserName</th>
+            <th>Pasword</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let customers of customer">
+            <td>{{customers.firstName}}</td>
+            <td>{{customers.lastName}}</td>
+            <td>{{customers.userName}}</td>
+            <td>{{customers.password}}</td>
+        </tr>
+    </tbody>
+</table>

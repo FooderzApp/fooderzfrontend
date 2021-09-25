@@ -8,16 +8,16 @@
                 <p  style="padding: 10px;color:white;background-color:#4CAF50;text-align: center;"><B>*CUSTOMER SIGNUP*</B></p>
              
                 <label for="firstname"><b>FIRST NAME : </b></label> 
-                <input type="text" id="firstname" placeholder="Enter firstname" name="firstname" required>
+                <input type="text" id="firstname" placeholder="Enter firstname" name="firstname" [(ngModel)]="customer.firstName" required>
                 <label for="lastname"><b>LAST NAME : </b></label> 
-                <input type="lastname" id="lastname" placeholder="Enter lastname" name="lastname" required>
+                <input type="lastname" id="lastname" placeholder="Enter lastname" name="lastname" [(ngModel)]="customer.lastName" required>
                 <label for="username"><b>USER NAME : </b></label> 
-                <input type="username" id="username" placeholder="Enter username" name="username" required>
+                <input type="username" id="username" placeholder="Enter username" name="username" [(ngModel)]="customer.userName" required>
 
                 <label for="password"><b>PASSWORD :</b> </label> 
-                <input type="password" id="password" placeholder="Enter Password" name="password" required>
-                <button type="submit">create an account</button>
-                <a routerLink='/logincustomer'> <button type="button" class="cancelbtn"> back</button></a> 
+                <input type="password" id="password" placeholder="Enter Password" name="password" [(ngModel)]="customer.password" required>
+                <button type="submit" (click)="AddLogin()">create an account</button>
+                <!-- <a routerLink='/logincustomer'> <button type="button" class="cancelbtn" > back</button></a>  -->
                
                
                
