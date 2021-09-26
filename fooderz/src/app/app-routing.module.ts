@@ -4,6 +4,7 @@ import { FirstpageComponent } from './firstpage/firstpage.component';
 import { LogincustomerComponent } from './logincustomer/logincustomer.component';
 import { LoginemployeeComponent } from './loginemployee/loginemployee.component';
 import { SignupcustomerComponent } from './signupcustomer/signupcustomer.component';
+import { ViewCustomerComponent } from './view-customer/view-customer.component';
 
 
 
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path:'loginemployee',component:LoginemployeeComponent},
   {path:'myfirst' , component:FirstpageComponent},
   {path:'logincustomer', component:LogincustomerComponent},
-  {path:"signupcustomer", component:SignupcustomerComponent}
+  {path:"signupcustomer", component:SignupcustomerComponent},
+  {path:"viewcustomer",component:ViewCustomerComponent}
 ];
 
 @NgModule({

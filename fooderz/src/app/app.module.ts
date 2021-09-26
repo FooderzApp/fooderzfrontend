@@ -8,6 +8,12 @@ import { FirstpageComponent } from './firstpage/firstpage.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LogincustomerComponent } from './logincustomer/logincustomer.component';
 import { SignupcustomerComponent } from './signupcustomer/signupcustomer.component';
+import { CustomerComponent } from './customer/customer.component';
+import { ViewCustomerComponent } from './view-customer/view-customer.component';
+import { FoodComponent } from './food/food.component';
+import { ViewFoodComponent } from './view-food/view-food.component';
+import { CustomerService } from './customer.service';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,14 +22,19 @@ import { SignupcustomerComponent } from './signupcustomer/signupcustomer.compone
     LoginemployeeComponent,
     FirstpageComponent,
     LogincustomerComponent,
-    SignupcustomerComponent
+    SignupcustomerComponent,
+    CustomerComponent,
+    ViewCustomerComponent,
+    FoodComponent,
+    ViewFoodComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [CustomerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

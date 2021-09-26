@@ -1,16 +1,18 @@
 <div class="first">
  
     <div class ="second">
-        <form>
+        <form (ngSubmit)="gotocustomer()">
+            
+            <small class="danger">{{msg}}</small>
             
             <div class="container"> 
                 
                 <p FOR="USERNAME" style="padding: 10px;color:white;background-color:#4CAF50;text-align: center;"><B>*CUSTOMER LOGIN*</B></p>
              
                 <label for="username"><b>Username : </b></label> 
-                <input type="text" id="username" placeholder="Enter Username" name="username" required>
+                <input type="text"  placeholder="Enter Username" name="username" required [(ngModel)]="customer.userName">
                 <label for="password"><b>Password :</b> </label> 
-                <input type="password" id="password" placeholder="Enter Password" name="password" required>
+                <input type="password" id="password" placeholder="Enter Password" name="password" required [(ngModel)]="customer.password">
                 <button type="submit">Login</button>
                
                <a routerLink='/signupcustomer'><button type="button" class="signup">signup</button></a>
