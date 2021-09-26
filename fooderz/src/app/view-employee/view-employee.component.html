@@ -1,0 +1,18 @@
+<table class="table table-light">
+    <thead class="thead-light">
+        <tr>
+            <th>Emplyee Id</th>
+            <th>Employee Name</th>
+            <th>Employee Email</th>
+            <th>Employee Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let employees of Employee">
+            <td>{{employees.employeeId}}</td>
+            <td>{{employees.employeeUsername}}</td>
+            <td>{{employees.employeeEmail}}</td>
+            <td>{{employees.employeePassword}}</td>
+        </tr>
+    </tbody>
+</table>
