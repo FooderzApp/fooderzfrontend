@@ -14,6 +14,10 @@ import { FoodComponent } from './food/food.component';
 import { ViewFoodComponent } from './view-food/view-food.component';
 import { CustomerService } from './customer.service';
 import { FormsModule } from '@angular/forms';
+import { AddEmployeeComponent } from './add-employee/add-employee.component';
+import { ViewEmployeeComponent } from './view-employee/view-employee.component';
+import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
+import { EmployeeService } from './employee.service';
 
 
 @NgModule({
@@ -26,7 +30,10 @@ import { FormsModule } from '@angular/forms';
     CustomerComponent,
     ViewCustomerComponent,
     FoodComponent,
-    ViewFoodComponent
+    ViewFoodComponent,
+    AddEmployeeComponent,
+    ViewEmployeeComponent,
+    DeleteEmployeeComponent
   ],
   imports: [
     BrowserModule,
@@ -34,7 +41,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FormsModule
   ],
-  providers: [CustomerService],
+  providers: [CustomerService,EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
