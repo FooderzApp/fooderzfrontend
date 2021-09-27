@@ -1,0 +1,46 @@
+.first
+{
+    background-image: url('https://i.pinimg.com/736x/e9/88/09/e988093865a29fbf6ed8c4f0beb8e302.jpg');
+    min-height:550px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.third
+{
+    padding: 20px;color:white ;background-color:black;text-align: center
+    
+    
+    
+    
+}
+.second
+{
+    position:absolute;
+    left:9cm;
+    bottom:6cm;
+}
+.button
+{
+    background-color: #04AA6D;
+    color: white;
+    padding: 6px 15px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 1;
+    
+}
+button:hover{
+    opacity:1;
+    color: black;
+   
+
+}
+fifth{
+    box-sizing: initial;
+    background-color: ivory;
+}

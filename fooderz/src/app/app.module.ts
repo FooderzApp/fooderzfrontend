@@ -18,6 +18,11 @@ import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 import { DeleteEmployeeComponent } from './delete-employee/delete-employee.component';
 import { EmployeeService } from './employee.service';
+import { EmployeedashboardComponent } from './employeedashboard/employeedashboard.component';
+import { AddfoodComponent } from './addfood/addfood.component';
+import { FooddashboardComponent } from './fooddashboard/fooddashboard.component';
+import { ViewfooditemsComponent } from './viewfooditems/viewfooditems.component';
+
 
 
 @NgModule({
@@ -33,7 +38,12 @@ import { EmployeeService } from './employee.service';
     ViewFoodComponent,
     AddEmployeeComponent,
     ViewEmployeeComponent,
-    DeleteEmployeeComponent
+    DeleteEmployeeComponent,
+    EmployeedashboardComponent,
+    AddfoodComponent,
+    FooddashboardComponent,
+    ViewfooditemsComponent,
+  
   ],
   imports: [
     BrowserModule,
