@@ -18,8 +18,8 @@ export class FoodcrudService {
   {
      return this.http.post<Food>(this.url,food);
   }
-  public deleteFood (id:number):void{
-    this.http.delete(this.url+"/{id}");
+  public deleteFood (id:number):Observable<any>{
+    return this.http.delete(this.url+`/${id}`);
   }
   public getAllFoods():Observable<Food[]>
   {

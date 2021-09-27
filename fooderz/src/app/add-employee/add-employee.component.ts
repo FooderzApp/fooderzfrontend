@@ -17,10 +17,10 @@ export class AddEmployeeComponent {
   }
 
 
-  public addPlayer(): void {
+  public addemployee(): void {
     this.service.addEmployee(this.employee).subscribe(res => {
       this.employee = new Employee();
-      this.router.navigate(['/viewEmployees']);
+      this.router.navigate(['/viewemployees']);
     })
   }
 

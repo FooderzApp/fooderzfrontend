@@ -19,8 +19,9 @@ export class EmployeeService {
     return this.http.post<Employee>(this.url, employee);
   }
 
-  public deleteEmployee(employeeId: number):Observable<any> {
-    return this.http.delete(this.url + `/${employeeId}`);  
+  public deleteEmployee(id: number):Observable<any> {
+   
+    return this.http.delete(this.url + `/${id}`);  
   }
 
   public viewEmployees(): Observable<Employee[]> {

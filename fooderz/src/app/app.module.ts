@@ -22,6 +22,7 @@ import { EmployeedashboardComponent } from './employeedashboard/employeedashboar
 import { AddfoodComponent } from './addfood/addfood.component';
 import { FooddashboardComponent } from './fooddashboard/fooddashboard.component';
 import { ViewfooditemsComponent } from './viewfooditems/viewfooditems.component';
+import { EmployeecrudsComponent } from './employeecruds/employeecruds.component';
 
 
 
@@ -43,6 +44,7 @@ import { ViewfooditemsComponent } from './viewfooditems/viewfooditems.component'
     AddfoodComponent,
     FooddashboardComponent,
     ViewfooditemsComponent,
+    EmployeecrudsComponent,
   
   ],
   imports: [
