@@ -9,10 +9,10 @@
             <p  style="padding: 10px;color:white;background-color:#4CAF50;text-align: center;"><B>EMPLOYEE LOGIN</B></p>
          
             <label for="username">Username : </label> 
-            <input type="text" id="username" placeholder="Enter Username" name="username" required>
+            <input type="text" id="username" placeholder="Enter Username" name="username"  [(ngModel)]="employee.employeeEmail"  required>
             <label for="password">Password : </label> 
-            <input type="password" id="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button>
+            <input type="password" id="password" placeholder="Enter Password" name="password" [(ngModel)]="employee.employeePassword" required>
+            <button type="submit" (click)="employeelogin(employee.employeeId,employee.employeePassword)">Login</button>
            <a routerLink='/myfirst'> <button type="button" class="cancelbtn"> back</button></a> 
            
         </div> 

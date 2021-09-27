@@ -29,7 +29,7 @@ refreshEmployee(){
 }
 
   public deleteemployee(id){
-    console.log("hii");
+
     this.service.deleteEmployee(id).subscribe(res=>{
      
   this.refreshEmployee();
