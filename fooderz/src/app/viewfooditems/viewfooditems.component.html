@@ -4,6 +4,7 @@
         <div class="card-body">
             <h5 class="card-title">{{food.foodName | uppercase}}</h5>
             <p class="card-text">price: {{food.price}}</p>
+            <button class="buttonn" (click)="deletefood(food.foodId)">delete</button>
         </div>
     </div>
 </div>

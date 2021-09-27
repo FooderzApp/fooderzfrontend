@@ -10,19 +10,33 @@ import { FoodcrudService } from '../foodcrud.service';
 })
 export class ViewfooditemsComponent implements OnInit {
 
-  private foods:Food[];
+   foods:Food[];
+  id:number;
 
   constructor(private service :FoodcrudService , private router:Router ) { 
 
   }
 
   
-
   ngOnInit() {
-    this.service.getAllFoods().subscribe(res=>{
-      console.log("hii");
-      this.foods=res;
-  })
+    this.refreshEmployee();
+    }
 
+
+    refreshEmployee(){
+      this.service.getAllFoods().subscribe(res=>{
+        this.foods=res;
+      })
+    }
+
+    public deletefood(id){
+      console.log("hii");
+      this.service.deleteFood(id).subscribe(res=>{
+       
+    this.refreshEmployee();
+    
+  
+      })
+  }
 }
-}
+

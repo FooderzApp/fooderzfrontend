@@ -10,20 +10,36 @@ import { EmployeeService } from '../employee.service';
 })
 export class ViewEmployeeComponent implements OnInit {
 
-  employee:Employee[];
+  employees:Employee[];
+  
+    id:number;
   constructor(private service:EmployeeService,private router:Router) {
   
    }
 
   ngOnInit() {
-    this.refreshEmployee();
+  this.refreshEmployee();
   }
 
-  refreshEmployee(){
-    this.service.viewEmployees().subscribe(res=>{
-      this.employee=res;
+refreshEmployee(){
+  this.service.viewEmployees().subscribe(res=>{
+    this.employees=res;
+  })
+
+}
+
+  public deleteemployee(id){
+    console.log("hii");
+    this.service.deleteEmployee(id).subscribe(res=>{
+     
+  this.refreshEmployee();
+  
+
     })
+
   }
+
+ 
 
 
 }

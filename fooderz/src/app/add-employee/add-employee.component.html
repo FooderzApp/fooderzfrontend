@@ -1,1 +1,12 @@
-<p>add-employee works!</p>
+<div class="container-fluid">
+    <h2 style="text-decoration: underline;">Add employees</h2>
+    
+    <label>Employee name</label>
+    <input class="form-control" type="text" [(ngModel)]="employee.employeeUsername">
+    <label>Employee password</label>
+    <input class="form-control" type="password" [(ngModel)]="employee.employeePassword">
+    <label>Employee email</label>
+    <input class="form-control" type="text" [(ngModel)]="employee.employeeEmail">
+    
+    <button class="btn btn-primary" type="button" (click)="addemployee()">add employee</button>
+</div>
