@@ -8,6 +8,14 @@ import { FirstpageComponent } from './firstpage/firstpage.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LogincustomerComponent } from './logincustomer/logincustomer.component';
 import { SignupcustomerComponent } from './signupcustomer/signupcustomer.component';
+import { FormsModule } from '@angular/forms';
+import { EmployeeService } from './employee.service';
+import { EmployeedashboardComponent } from './employeedashboard/employeedashboard.component';
+import { FoodComponent } from './food/food.component';
+import { FooddashboardComponent } from './fooddashboard/fooddashboard.component';
+import { AddfoodComponent } from './addfood/addfood.component';
+import { DeletefoodComponent } from './deletefood/deletefood.component';
+import { GetallfoodComponent } from './getallfood/getallfood.component';
 
 
 @NgModule({
@@ -16,14 +24,21 @@ import { SignupcustomerComponent } from './signupcustomer/signupcustomer.compone
     LoginemployeeComponent,
     FirstpageComponent,
     LogincustomerComponent,
-    SignupcustomerComponent
+    SignupcustomerComponent,
+    EmployeedashboardComponent,
+    FoodComponent,
+    FooddashboardComponent,
+    AddfoodComponent,
+    DeletefoodComponent,
+    GetallfoodComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,8 @@
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Employee } from '../employee';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-loginemployee',
@@ -7,9 +11,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginemployeeComponent implements OnInit {
 
-  constructor() { }
+  private employee:Employee;
+  private value;
 
-  ngOnInit() {
+
+  constructor(private service :EmployeeService, private router:Router) { 
+    this.employee = new Employee();
+  }
+  public employeeLogin(employeeEmail,employeePassword):any{
+    this.employee.employeeEmail=employeeEmail;
+    this.employee.employeePassword=employeePassword;
+
+
   }
 
-}
+  ngOnInit() { 
+    this.service.employeeLogin(this.employee.employeeEmail,this.employee.employeePassword).subscribe(res=>{
+      if(res==true)
+      {
+        this.router.navigate(['/employeedashboard'])
+      }
+    })
+  }
+
+      
+    
+  }
+  
+
+

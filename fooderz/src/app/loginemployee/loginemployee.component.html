@@ -8,14 +8,19 @@
         <div class="container"> 
             <p  style="padding: 10px;color:white;background-color:#4CAF50;text-align: center;"><B>EMPLOYEE LOGIN</B></p>
          
-            <label for="username">Username : </label> 
-            <input type="text" id="username" placeholder="Enter Username" name="username" required>
+            <label for="username">Email : </label> 
+            <input type="text" id="username" placeholder="Enter Email" name="username"  [(ngModel)]="employee.employeeEmail" required>
             <label for="password">Password : </label> 
-            <input type="password" id="password" placeholder="Enter Password" name="password" required>
-            <button type="submit">Login</button>
-           <a routerLink='/myfirst'> <button type="button" class="cancelbtn"> back</button></a> 
+            <input type="password" id="password" placeholder="Enter Password" name="password" [(ngModel)]="employee.employeePassword" required>
+            <button type="submit" (click)="employeeLogin(a,b)" >Login</button>
+           <a routerLink='/fooddashboard'> <button type="button" class="cancelbtn"> back</button></a> 
+           <h1>{{employee.employeeEmail}}</h1>
+    
+          
            
         </div> 
-    </form>   
+    </form> 
+   
 </div>
-</div>
+
+
