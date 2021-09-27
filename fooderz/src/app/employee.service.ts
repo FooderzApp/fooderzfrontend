@@ -8,6 +8,9 @@ import { Employee } from './employee';
   providedIn: 'root'
 })
 export class EmployeeService {
+  deletePlayer(id: any) {
+    throw new Error('Method not implemented.');
+  }
   private url: string;
   constructor( private http:HttpClient) {
     this.url ="http://localhost:9500/employee";
@@ -16,11 +19,11 @@ export class EmployeeService {
     return this.http.post<Employee>(this.url, employee);
   }
 
-  public deleteEmployee(id: number):Observable<any> {
-    return this.http.delete(this.url + `/${id}`);  
+  public deleteEmployee(employeeId: number):Observable<any> {
+    return this.http.delete(this.url + `/${employeeId}`);  
   }
 
   public viewEmployees(): Observable<Employee[]> {
-    return this.http.get<Employee[]>(this.url);
+    return this.http.get<Employee[]>(this.url + `s`);
   }
 }
