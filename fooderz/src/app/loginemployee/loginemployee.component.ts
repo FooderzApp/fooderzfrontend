@@ -35,7 +35,7 @@ export class LoginemployeeComponent implements OnInit {
       console.log(res);
       if(res==false)
       {
-        alert("wrongcreds");
+        alert("invalid Credenttials");
       }
       else{
         this.router.navigate(["/employeedashboard"]);

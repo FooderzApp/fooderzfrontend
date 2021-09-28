@@ -9,7 +9,7 @@
             <p  style="padding: 10px;color:white;background-color:#4CAF50;text-align: center;"><B>EMPLOYEE LOGIN</B></p>
          
             <label for="username">Username : </label> 
-            <input type="text" id="username" placeholder="Enter Username" name="username"  [(ngModel)]="employee.employeeEmail"  required>
+            <input type="text" id="username" placeholder="Enter Username" name="username"   required [(ngModel)]="employee.employeeEmail"  >
             <label for="password">Password : </label> 
             <input type="password" id="password" placeholder="Enter Password" name="password" [(ngModel)]="employee.employeePassword" required>
             <button type="submit" (click)="employeelogin(employee.employeeId,employee.employeePassword)">Login</button>

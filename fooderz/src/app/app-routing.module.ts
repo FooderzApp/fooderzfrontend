@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AddEmployeeComponent } from './add-employee/add-employee.component';
 import { AddfoodComponent } from './addfood/addfood.component';
+import { CustomerdashboardComponent } from './customerdashboard/customerdashboard.component';
 import { EmployeecrudsComponent } from './employeecruds/employeecruds.component';
 import { EmployeedashboardComponent } from './employeedashboard/employeedashboard.component';
 import { FirstpageComponent } from './firstpage/firstpage.component';
@@ -28,7 +29,8 @@ const routes: Routes = [
   {path:"viewfooditems",component:ViewfooditemsComponent},
   {path:"employeecruds",component:EmployeecrudsComponent},
   {path:"addemployee",component:AddEmployeeComponent},
-  {path:"viewemployees",component:ViewEmployeeComponent}
+  {path:"viewemployees",component:ViewEmployeeComponent},
+  {path:"customerdashboard",component:CustomerdashboardComponent}
 
 ];
 
