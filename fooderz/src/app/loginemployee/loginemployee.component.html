@@ -1,5 +1,5 @@
 
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="first">
  
 <div class ="second">
@@ -7,14 +7,14 @@
         
         <div class="container"> 
             <p  style="padding: 10px;color:white;background-color:#4CAF50;text-align: center;"><B>EMPLOYEE LOGIN</B></p>
-         
+        
             <label for="username">Username : </label> 
-            <input type="text" id="username" placeholder="Enter Username" name="username"   required [(ngModel)]="employee.employeeEmail"  >
+            <input type="text" id="username" placeholder="Enter Username" name="username"    [(ngModel)]="employee.employeeEmail" required>
             <label for="password">Password : </label> 
             <input type="password" id="password" placeholder="Enter Password" name="password" [(ngModel)]="employee.employeePassword" required>
             <button type="submit" (click)="employeelogin(employee.employeeId,employee.employeePassword)">Login</button>
            <a routerLink='/myfirst'> <button type="button" class="cancelbtn"> back</button></a> 
-           
+        
         </div> 
     </form>   
 </div>

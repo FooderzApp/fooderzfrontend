@@ -1,0 +1,40 @@
+.container-fluid{
+    background-image: url("https://i.pinimg.com/736x/e9/88/09/e988093865a29fbf6ed8c4f0beb8e302.jpg");
+    min-height:700px;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+   
+
+}
+.second{
+    color:white;
+}
+.form-control{
+    size: 20;
+}
+input[type=text] { 
+    width: 100%; 
+    margin: 8px 0;
+    padding: 12px 10px; 
+    display: inline-block; 
+    border: 2px solid green; 
+    box-sizing: border-box; 
+}
+.employeename{
+
+    text-align: center;
+    color:white;
+
+}
+.add {
+    text-align: center;
+    color:white;
+    text-decoration: underline;
+    
+
+}
