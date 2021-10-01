@@ -13,12 +13,16 @@ export class CartService {
     this.url="http://localhost:9500/cart";
   }
 
-  private addCart(cart:Cart):Observable<any>{
+  public addCart(cart:Cart):Observable<any>{
     return this.http.post<Cart>(this.url,cart);
   }
 
-  private getAllCarts():Observable<any>{
+  public getAllCarts():Observable<Cart[]>{
     return this.http.get<Cart[]>(this.url);
+  }
+
+  public deleteCart(id:number):Observable<any>{
+    return this.http.delete(this.url + `/${id}`);
   }
 
 }
