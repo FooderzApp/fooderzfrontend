@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Employee } from '../employee';
 
 import { AddEmployeeComponent } from './add-employee.component';
 
@@ -23,3 +24,6 @@ describe('AddEmployeeComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+
+

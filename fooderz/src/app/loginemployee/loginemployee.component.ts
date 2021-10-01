@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AlertPromise } from 'selenium-webdriver';
 
 import { Employee } from '../employee';
 import { EmployeeloginService } from '../employeelogin.service';
@@ -15,6 +14,7 @@ export class LoginemployeeComponent implements OnInit {
   employee:Employee;
   email:string;
   password:string;
+  result:boolean;
 
   constructor(private service:EmployeeloginService,private router:Router) { 
     this.employee=new Employee();
@@ -27,12 +27,19 @@ export class LoginemployeeComponent implements OnInit {
   public employeelogin(email,password)
   {
     console.log("hiii")
-  
-    console.log(this.employee.employeeEmail,this.employee.employeePassword);
+    if(this.employee.employeeEmail == null || this.employee.employeePassword==null)
+    {
+      alert("fields cant be empty");
+    }
+   
+   
+
+   
     this.service.employeelogin(this.employee.employeeEmail,this.employee.employeePassword).subscribe(res=>{
       console.log(this.employee.employeeEmail,this.employee.employeePassword);
       this.employee=new Employee();
       console.log(res);
+      this.result=res;
       if(res==false)
       {
         alert("invalid Credenttials");
@@ -43,7 +50,7 @@ export class LoginemployeeComponent implements OnInit {
       }
       
     } )
-    console.log("hello2");
+    return this.result;
     
     
   }
