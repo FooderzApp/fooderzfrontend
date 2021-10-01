@@ -23,7 +23,7 @@ export class LogincustomerComponent  {
       console.log("response recived"); 
       this.msg="login successfull";
       alert(this.msg);   
-      this.router.navigate(['/viewcustomer']);
+      this.router.navigate(['/viewfooditems']);
     },error=>{
       console.log("exception occured");
       this.msg="sorry not valid one";

@@ -10,6 +10,7 @@ import { FoodcrudService } from '../foodcrud.service';
 })
 export class AddfoodComponent {
   private food :Food;
+  
 
   constructor(private service:FoodcrudService,private router:Router) { 
     this.food = new Food();

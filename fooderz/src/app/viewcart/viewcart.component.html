@@ -1,0 +1,21 @@
+
+<table class="table table-light">
+    <thead class="thead-light">
+        <tr>
+            <th>cartId</th>
+            <th>CustomerId</th>
+            <th>foodName</th>
+            <th>foodPrice</th>
+            <th>avatar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let carts of cart"> 
+            <td>{{carts.cartId}}</td>
+            <td>{{carts.customer.customerId}}</td>
+            <td>{{carts.foods.foodName}}</td>
+            <td>{{carts.foods.price}}</td>
+            <td>{{carts.foods.avatar}}</td>
+        </tr>
+    </tbody>
+</table>

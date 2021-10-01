@@ -1,7 +1,7 @@
 export class Food {
-
-    private  foodName:string;
-	private  price:number;
-	private avatar:string;
+		foodId:number;
+      foodName:string;
+	  price:number;
+	 avatar:string;
 
 }

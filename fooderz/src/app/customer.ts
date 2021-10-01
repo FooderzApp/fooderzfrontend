@@ -1,7 +1,7 @@
 import { Food } from "./food";
 
 export class Customer {
-    id:number;
+    customerId:number;
     firstName:string;
     lastName:string;
     userName:string;
