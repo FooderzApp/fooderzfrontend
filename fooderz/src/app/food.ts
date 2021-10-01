@@ -10,9 +10,7 @@ export class Food {
 	 
 
 
-      foodName:string;
-	  price:number;
-     avatar:string;
+      
 
 
 }

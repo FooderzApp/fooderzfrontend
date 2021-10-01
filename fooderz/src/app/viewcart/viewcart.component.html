@@ -7,7 +7,7 @@
             <th>FoodName</th>
             <th>price</th>
             <th>avatar</th>
-            <!-- <th>delete</th> -->
+            <th>delete</th>
         </tr>
     </thead>
     <tbody>
@@ -20,6 +20,8 @@
             <td>{{carts.foodList.foodName}}</td>
             <td>{{carts.foodList.price}}</td>
             <td><img class="img-thumbnail" [src]=carts.foodList.avatar></td>  
+            <td> <button class="btn btn-primary" (click)="deleteCart(carts.cartId)">delete</button> </td>
+
             </tr>                               
        
            
