@@ -47,12 +47,13 @@ button {
     .second {
 
         background-image: url('https://st.depositphotos.com/3147737/4947/i/600/depositphotos_49471133-stock-photo-hyderabadi-biryani-a-popular-chicken.jpg');
-        min-height:560px;
+        min-height:700px;
 
         /* Center and scale the image nicely */
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        width: 35cm;
       }
        
