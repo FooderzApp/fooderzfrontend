@@ -26,4 +26,8 @@ export class FoodcrudService {
 
      return this.http.get<Food[]>(this.url);
   }
+
+  public getFoodById(id:number):Observable<Food>{
+    return this.http.get<Food>("http://localhost:9500/food/" + `/${id}`) ;
+  }
 }

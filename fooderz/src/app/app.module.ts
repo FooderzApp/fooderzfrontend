@@ -26,8 +26,10 @@ import { EmployeecrudsComponent } from './employeecruds/employeecruds.component'
 
 import { ViewcartComponent } from './viewcart/viewcart.component';
 import { AddcartComponent } from './addcart/addcart.component';
-=======
+
 import { CustomerdashboardComponent } from './customerdashboard/customerdashboard.component';
+import { CartService } from './cart.service';
+import { FoodcrudService } from './foodcrud.service';
 
 
 
@@ -54,7 +56,7 @@ import { CustomerdashboardComponent } from './customerdashboard/customerdashboar
 
     ViewcartComponent,
     AddcartComponent,
-=======
+
     CustomerdashboardComponent,
 
   
@@ -65,7 +67,7 @@ import { CustomerdashboardComponent } from './customerdashboard/customerdashboar
     HttpClientModule,
     FormsModule
   ],
-  providers: [CustomerService,EmployeeService],
+  providers: [CustomerService,EmployeeService,CartService,FoodcrudService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
