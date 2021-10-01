@@ -37,6 +37,7 @@ food2:Food;
   deleteCart(id){
     this.service.deleteCart(id).subscribe(res=>{
       console.log(res);
+      this.refreshCart();
       
     })
   }
