@@ -32,14 +32,18 @@ const routes: Routes = [
   {path:"fooddashboard",component:FooddashboardComponent},
   {path:"viewfooditems",component:ViewfooditemsComponent},
 
-  {path:"viewcart",component:ViewcartComponent}
+  {path:"viewcart",component:ViewcartComponent},
 
-  {path:"employeecruds",component:EmployeecrudsComponent},
-  {path:"addemployee",component:AddEmployeeComponent},
-  {path:"viewemployees",component:ViewEmployeeComponent},
+ 
+  // {path:"addemployee",component:AddEmployeeComponent},
+  // {path:"viewemployees",component:ViewEmployeeComponent},
   {path:"customerdashboard",component:CustomerdashboardComponent},
+
+  // {path:"viewcart",component:ViewcartComponent}
+
   {path:"viewcart",component:ViewcartComponent},
   {path:"vieworders",component:ViewordersComponent}
+
 
 ];
 

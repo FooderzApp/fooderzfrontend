@@ -14,28 +14,28 @@ import { Food } from '../food';
 })
 export class AddcartComponent implements OnInit {
 
-cart:Cart;
+// cart:Cart;
   //router: any;
   constructor(private service:CartService,private router:Router) { 
-    this.cart=new Cart();
-    this.cart.customer=new Customer();
-    this.cart.foods=new Food();
+    // this.cart=new Cart();
+    // this.cart.customer=new Customer();
+    // this.cart.foods=new Food();
   }
 
   ngOnInit() {
   }
 
-  public addCart(cart:Cart){
-    this.service.addCart(this.cart).subscribe(res=>{
-      this.cart=new Cart();
-      this.router.navigate(['/viewcart']);
-    })
+//   public addCart(cart:Cart){
+//     this.service.addCart(this.cart).subscribe(res=>{
+//       this.cart=new Cart();
+//       this.router.navigate(['/viewcart']);
+//     })
 
 
-  constructor() { }
+//   constructor() { }
 
-  ngOnInit() {
+//   ngOnInit() {
 
- }
+//  }
 
 }

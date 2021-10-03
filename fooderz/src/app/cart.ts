@@ -4,8 +4,8 @@ import { Food } from "./food";
 export class Cart {
     cartId:number;
 
-    customer:Customer;
-    foods:Food;
+ 
+ 
 
     customer:{
         "customerId":number,

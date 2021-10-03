@@ -1,4 +1,5 @@
 
+<h1>View Cart Details</h1>
 
 <table class="table table-light">
     <thead class="thead-light">
@@ -8,18 +9,21 @@
             <th>foodName</th>
             <th>foodPrice</th>
             <th>avatar</th>
+            <th>delete</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let carts of cart"> 
             <td>{{carts.cartId}}</td>
             <td>{{carts.customer.customerId}}</td>
-            <td>{{carts.foods.foodName}}</td>
-            <td>{{carts.foods.price}}</td>
-            <td>{{carts.foods.avatar}}</td>
+            <td>{{carts.foodList.foodName}}</td>
+            <td>{{carts.foodList.price}}</td>
+            <td>{{carts.foodList.avatar}}</td>
+            <td><button class="btn btn-primary" (click)="deleteCart(carts.cartId)">delete</button></td>
         </tr>
     </tbody>
 </table>
+
 
 <h1>View Cart Details</h1>
 <button class="anchor" routerLink="/vieworders">orders</button>
@@ -48,12 +52,7 @@
             <th><button class="btn btn-primary" (click)="addtoorder(carts.cartId)">order</button></th>
             <td> <button class="btn btn-primary" (click)="deleteCart(carts.cartId)">delete</button> </td>
 
-            </tr>                               
-       
-           
-  
-    </tbody>
-</table>
+
 
 
 
