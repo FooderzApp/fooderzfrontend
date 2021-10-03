@@ -1,0 +1,21 @@
+.first
+{
+    background-image: url("https://i.pinimg.com/736x/e9/88/09/e988093865a29fbf6ed8c4f0beb8e302.jpg");
+    height: 700px;
+}
+.nav-link1,.nav-link2{
+    background-color:#04AA6D;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;;
+    
+}
+.heading
+{
+    text-align: center;
+    text-decoration: underline;
+    color:white;
+}

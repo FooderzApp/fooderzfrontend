@@ -22,8 +22,13 @@ export class LogincustomerComponent  {
     this.service.loginCustomer(this.customer).subscribe(res=>{
       console.log("response recived"); 
       this.msg="login successfull";
+      localStorage.setItem("id",JSON.stringify(res));
       alert(this.msg);   
-      this.router.navigate(['/viewfooditems']);
+
+   
+
+      this.router.navigate(['/customerdashboard']);
+
     },error=>{
       console.log("exception occured");
       this.msg="sorry not valid one";

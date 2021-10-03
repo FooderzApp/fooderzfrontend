@@ -25,9 +25,14 @@ export class SignupcustomerComponent  {
     this.msg="Registration Successfull";
     alert(this.msg);
   },error=>{
+
     //alert("not registered successfully plz check the details");
     alert("email id alredy exits");
   
+
+    alert("emailid is already present");
+    this.msg=error.error;
+
   })
   }
 

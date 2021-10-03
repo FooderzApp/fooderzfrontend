@@ -1,0 +1,28 @@
+<div class="home">
+  <h1 style=text-align:center>MENU CARD</h1>
+<table class="table table-light">
+  <thead class="thead-light">
+      <tr>
+          <th>Image</th>
+          <th>Foodname</th>
+          <th>Food PRICE</th>
+          <th>CART</th>
+         
+         
+      </tr>
+  </thead>
+  <tbody>
+    
+      <tr *ngFor ="let food of foods"> <!--app-viewcart [cart]="food"-->
+
+           <td><img class="img-thumbnail" [src]="food.avatar"></td>
+           <!-- <td><img [attr.src]="foodItem.avatar"/>
+           </td> -->
+          <td>{{food.foodName}}</td>
+          <td>{{food.price}}</td>
+          <td><button type="button" class="btn btn-primary" (click)="addToCart(food.foodId)">cart</button></td>
+          
+    </tr>
+  </tbody>
+</table>
+</div>

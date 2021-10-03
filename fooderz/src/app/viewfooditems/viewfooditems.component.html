@@ -1,3 +1,4 @@
+
 <div class="container-fluid">
     <div class="card" *ngFor="let food of foods">
         <img class="card-img-top" style="width: 200px; height: 200px;" [src]="food.avatar" alt="{{food.foodName}}">
@@ -8,4 +9,32 @@
         </div>
     </div>
 </div>
+
+
+<div class="home">
+    <h1 style=text-align:center>Items</h1>
+  <table class="table table-light">
+    <thead class="thead-light">
+        <tr>
+            <th>Image</th>
+            <th>Foodname</th>
+            <th>Food PRICE</th>
+            <th>Delete</th>
+           
+           
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let food of foods">
+  
+             <td><img class="img-thumbnail" [src]="food.avatar"></td>
+            <td>{{food.foodName}}</td>
+            <td>{{food.price}}</td>
+            <td><button class="buttonn" (click)="deletefood(food.foodId)">delete</button></td>
+            
+           
+        </tr>
+    </tbody>
+  </table>
+  </div>
 

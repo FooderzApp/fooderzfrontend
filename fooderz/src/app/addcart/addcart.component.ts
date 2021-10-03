@@ -1,9 +1,11 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Router } from '@angular/router';
 import { Cart } from '../cart';
 import { CartService } from '../cart.service';
 import { Customer } from '../customer';
 import { Food } from '../food';
+
 
 @Component({
   selector: 'app-addcart',
@@ -11,6 +13,7 @@ import { Food } from '../food';
   styleUrls: ['./addcart.component.css']
 })
 export class AddcartComponent implements OnInit {
+
 cart:Cart;
   //router: any;
   constructor(private service:CartService,private router:Router) { 
@@ -27,6 +30,12 @@ cart:Cart;
       this.cart=new Cart();
       this.router.navigate(['/viewcart']);
     })
-  }
+
+
+  constructor() { }
+
+  ngOnInit() {
+
+ }
 
 }

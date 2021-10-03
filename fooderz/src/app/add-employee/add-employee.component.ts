@@ -10,17 +10,17 @@ import { EmployeeService } from '../employee.service';
 })
 export class AddEmployeeComponent {
 
-  private employee:Employee;
+  public employee:Employee;
 
   constructor(private service: EmployeeService, private router: Router) {
     this.employee = new Employee();
   }
 
 
-  public addPlayer(): void {
+  public addemployee(): void {
     this.service.addEmployee(this.employee).subscribe(res => {
       this.employee = new Employee();
-      this.router.navigate(['/viewEmployees']);
+      this.router.navigate(['/viewemployees']);
     })
   }
 

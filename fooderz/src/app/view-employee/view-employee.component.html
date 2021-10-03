@@ -1,18 +1,27 @@
+
+
+
+
 <table class="table table-light">
     <thead class="thead-light">
         <tr>
-            <th>Emplyee Id</th>
+            <th>Employee id</th>
             <th>Employee Name</th>
             <th>Employee Email</th>
             <th>Employee Password</th>
+            <th>delete</th>
+           
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor ="let employees of Employee">
-            <td>{{employees.employeeId}}</td>
-            <td>{{employees.employeeUsername}}</td>
-            <td>{{employees.employeeEmail}}</td>
-            <td>{{employees.employeePassword}}</td>
+        <tr *ngFor ="let employee of employees">
+
+             <td>{{employee.employeeId}}</td>
+            <td>{{employee.employeeUsername}}</td>
+            <td>{{employee.employeeEmail}}</td>
+            <td>{{employee.employeePassword}}</td>
+            <button class="btn-primary" (click)="deleteemployee(employee.employeeId)">delete</button>
+           
         </tr>
     </tbody>
 </table>

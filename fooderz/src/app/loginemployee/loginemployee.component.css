@@ -38,22 +38,23 @@ Body {
           border: 5px;
          border-inline: initial;
          position: absolute;
-        left: 13CM;
+        left:5cm;
         top:2cm;
-        width:10cm;
+        width:8cm;
         
 
       } 
-      .second {
+      .first{
 
-          background-image: url('https://st.depositphotos.com/3147737/4947/i/600/depositphotos_49471133-stock-photo-hyderabadi-biryani-a-popular-chicken.jpg');
-          min-height:560px;
+          background-image: url('https://i.pinimg.com/736x/e9/88/09/e988093865a29fbf6ed8c4f0beb8e302.jpg');
+          min-height:700px;
 
           /* Center and scale the image nicely */
           background-position: center;
           background-repeat: no-repeat;
           background-size: cover;
           position: relative;
+          width:35cm;
         }
          
         
