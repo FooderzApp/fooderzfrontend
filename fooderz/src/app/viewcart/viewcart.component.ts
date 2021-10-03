@@ -26,11 +26,13 @@ cart1:Cart;
 // cart1:Cart[];
 foods1:Food[];
 food2:Food;
-
-  constructor(private service:CartService,router:Router) {
+order:Order;
+  constructor(private service:CartService,private service2:OrderService,private router:Router) {
     this.cart1=new Cart();
     this.cart1.customer=new Customer();
     this.cart1.foodList=new Food();
+    this.foods1=[];
+    this.order=new Order();
 
    }
 
@@ -45,22 +47,22 @@ food2:Food;
  
   //   }
 
- cart:Cart;
-cart1:Cart[];
-foods1:Food[];
-food2:Food;
+//  cart:Cart;
+// cart1:Cart[];
+// foods1:Food[];
+// food2:Food;
 temp;
 
 
 
 
 
-order:Order;
 
-  constructor(private service:CartService,private service2:OrderService) { 
-    this.foods1=[];
-    this.order=new Order();
-  }
+
+  // constructor(private service:CartService,private service2:OrderService) { 
+  //   this.foods1=[];
+  //   this.order=new Order();
+  // }
 
 
  
@@ -102,6 +104,7 @@ order:Order;
       
       
        this.order=new Order();
+       this.router.navigate(['/vieworders']);
      });
 
 
