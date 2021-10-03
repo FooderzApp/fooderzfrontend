@@ -25,6 +25,34 @@
 </table>
 
 
+<h1>View Cart Details</h1>
+<button class="anchor" routerLink="/vieworders">orders</button>
+<table class="table table-light">
+    <thead class="thead-light">
+        <tr>
+            <th>CartId</th>
+            <th>CustomerId</th>
+            <th>FoodName</th>
+            <th>price</th>
+            <th>avatar</th>
+            <th>order</th>
+            <th>delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+            
+        <tr *ngFor="let carts of cart1" >
+
+            <td>{{carts.cartId}}</td>
+            <td>{{carts.customer.customerId}}</td>
+            <td>{{carts.foodList.foodName}}</td>
+            <td>{{carts.foodList.price}}</td>
+            <td><img class="img-thumbnail" [src]=carts.foodList.avatar></td>  
+            <th><button class="btn btn-primary" (click)="addtoorder(carts.cartId)">order</button></th>
+            <td> <button class="btn btn-primary" (click)="deleteCart(carts.cartId)">delete</button> </td>
+
+
 
 
 

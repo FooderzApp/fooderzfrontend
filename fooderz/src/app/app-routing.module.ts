@@ -16,6 +16,7 @@ import { ViewEmployeeComponent } from './view-employee/view-employee.component';
 
 import { ViewcartComponent } from './viewcart/viewcart.component';
 import { ViewfooditemsComponent } from './viewfooditems/viewfooditems.component';
+import { ViewordersComponent } from './vieworders/vieworders.component';
 
 
 
@@ -37,7 +38,12 @@ const routes: Routes = [
   // {path:"addemployee",component:AddEmployeeComponent},
   // {path:"viewemployees",component:ViewEmployeeComponent},
   {path:"customerdashboard",component:CustomerdashboardComponent},
+
   // {path:"viewcart",component:ViewcartComponent}
+
+  {path:"viewcart",component:ViewcartComponent},
+  {path:"vieworders",component:ViewordersComponent}
+
 
 ];
 

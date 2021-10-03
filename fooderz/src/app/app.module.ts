@@ -36,6 +36,7 @@ import { AddcartComponent } from './addcart/addcart.component';
 import { CustomerdashboardComponent } from './customerdashboard/customerdashboard.component';
 import { CartService } from './cart.service';
 import { FoodcrudService } from './foodcrud.service';
+import { ViewordersComponent } from './vieworders/vieworders.component';
 
 
 
@@ -70,7 +71,9 @@ import { FoodcrudService } from './foodcrud.service';
 
     CustomerdashboardComponent,
 
+    ViewordersComponent,
 
+ 
   ],
   imports: [
     BrowserModule,
