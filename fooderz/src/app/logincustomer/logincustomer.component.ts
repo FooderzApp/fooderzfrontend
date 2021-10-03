@@ -24,7 +24,11 @@ export class LogincustomerComponent  {
       this.msg="login successfull";
       localStorage.setItem("id",JSON.stringify(res));
       alert(this.msg);   
+
+   
+
       this.router.navigate(['/customerdashboard']);
+
     },error=>{
       console.log("exception occured");
       this.msg="sorry not valid one";
