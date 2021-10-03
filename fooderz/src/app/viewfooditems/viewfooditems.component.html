@@ -1,3 +1,16 @@
+
+<div class="container-fluid">
+    <div class="card" *ngFor="let food of foods">
+        <img class="card-img-top" style="width: 200px; height: 200px;" [src]="food.avatar" alt="{{food.foodName}}">
+        <div class="card-body">
+            <h5 class="card-title">{{food.foodName | uppercase}}</h5>
+            <p class="card-text">price: {{food.price}}</p>
+            <button class="btn-primary" (click)="addCart(food)">addFoodToCart</button>
+        </div>
+    </div>
+</div>
+
+
 <div class="home">
     <h1 style=text-align:center>Items</h1>
   <table class="table table-light">
@@ -24,3 +37,4 @@
     </tbody>
   </table>
   </div>
+

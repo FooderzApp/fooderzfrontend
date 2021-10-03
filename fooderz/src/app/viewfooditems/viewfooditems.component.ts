@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Cart } from '../cart';
+import { CartService } from '../cart.service';
 import { Food } from '../food';
 import { FoodcrudService } from '../foodcrud.service';
 
@@ -10,17 +12,27 @@ import { FoodcrudService } from '../foodcrud.service';
 })
 export class ViewfooditemsComponent implements OnInit {
 
+  foods:Food[];
+   cart:Cart;
+  food:Food;
+
    foods:Food[];
+
   id:number;
 
-  constructor(private service :FoodcrudService , private router:Router ) { 
+
+  constructor(private service :FoodcrudService,private service1:CartService , private router:Router ) { 
 
   }
 
   
   ngOnInit() {
+
+  this.refreshFood();
+
     this.refreshEmployee();
     }
+
 
 
     refreshEmployee(){
@@ -39,4 +51,28 @@ export class ViewfooditemsComponent implements OnInit {
       })
   }
 }
+
+
+refreshFood(){
+  this.service.getAllFoods().subscribe(res=>{
+  //  console.log("hii");
+    this.foods=res;
+    this.router.navigate(['/viewfooditems'])
+})
+}
+
+public addCart(cart:Cart){
+  this.service1.addCart(this.cart).subscribe(res=>{
+    this.cart=new Cart();
+    console.log(res);
+    this.router.navigate(['/viewcart']);
+    
+  })
+  // this.router.navigate(['/viewcart']);
+  
+}
+
+
+}
+
 

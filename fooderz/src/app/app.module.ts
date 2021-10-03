@@ -22,6 +22,12 @@ import { EmployeedashboardComponent } from './employeedashboard/employeedashboar
 import { AddfoodComponent } from './addfood/addfood.component';
 import { FooddashboardComponent } from './fooddashboard/fooddashboard.component';
 import { ViewfooditemsComponent } from './viewfooditems/viewfooditems.component';
+
+import { FoodcrudService } from './foodcrud.service';
+import { ViewcartComponent } from './viewcart/viewcart.component';
+import { AddcartComponent } from './addcart/addcart.component';
+import { CartService } from './cart.service';
+
 import { EmployeecrudsComponent } from './employeecruds/employeecruds.component';
 
 import { ViewcartComponent } from './viewcart/viewcart.component';
@@ -30,6 +36,7 @@ import { AddcartComponent } from './addcart/addcart.component';
 import { CustomerdashboardComponent } from './customerdashboard/customerdashboard.component';
 import { CartService } from './cart.service';
 import { FoodcrudService } from './foodcrud.service';
+
 
 
 
@@ -52,6 +59,10 @@ import { FoodcrudService } from './foodcrud.service';
     AddfoodComponent,
     FooddashboardComponent,
     ViewfooditemsComponent,
+
+    ViewcartComponent,
+    AddcartComponent,
+
     EmployeecrudsComponent,
 
     ViewcartComponent,
@@ -59,7 +70,7 @@ import { FoodcrudService } from './foodcrud.service';
 
     CustomerdashboardComponent,
 
-  
+
   ],
   imports: [
     BrowserModule,
@@ -67,7 +78,11 @@ import { FoodcrudService } from './foodcrud.service';
     HttpClientModule,
     FormsModule
   ],
-  providers: [CustomerService,EmployeeService,CartService,FoodcrudService],
+
+  providers: [CustomerService,EmployeeService,FoodcrudService,CartService],
+
+
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }

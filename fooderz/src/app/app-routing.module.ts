@@ -11,7 +11,9 @@ import { LogincustomerComponent } from './logincustomer/logincustomer.component'
 import { LoginemployeeComponent } from './loginemployee/loginemployee.component';
 import { SignupcustomerComponent } from './signupcustomer/signupcustomer.component';
 import { ViewCustomerComponent } from './view-customer/view-customer.component';
+
 import { ViewEmployeeComponent } from './view-employee/view-employee.component';
+
 import { ViewcartComponent } from './viewcart/viewcart.component';
 import { ViewfooditemsComponent } from './viewfooditems/viewfooditems.component';
 
@@ -28,6 +30,9 @@ const routes: Routes = [
   {path:"addfood",component:AddfoodComponent},
   {path:"fooddashboard",component:FooddashboardComponent},
   {path:"viewfooditems",component:ViewfooditemsComponent},
+
+  {path:"viewcart",component:ViewcartComponent}
+
   {path:"employeecruds",component:EmployeecrudsComponent},
   {path:"addemployee",component:AddEmployeeComponent},
   {path:"viewemployees",component:ViewEmployeeComponent},
