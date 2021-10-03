@@ -24,5 +24,10 @@ export class CartService {
   public deleteCart(id:number):Observable<any>{
     return this.http.delete(this.url + `/${id}`);
   }
+  public getcartitembyid(id:number):Observable<any>
+  {
+    console.log(id);
+    return this.http.get<Cart>(this.url+`/${id}`)
+  }
 
 }

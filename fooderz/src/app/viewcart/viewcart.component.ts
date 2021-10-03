@@ -4,6 +4,8 @@ import { Cart } from '../cart';
 import { CartService } from '../cart.service';
 import { Customer } from '../customer';
 import { Food } from '../food';
+import { Order } from '../order';
+import { OrderService } from '../order.service';
 
 @Component({
   selector: 'app-viewcart',
@@ -15,8 +17,17 @@ export class ViewcartComponent implements OnInit {
 cart1:Cart[];
 foods1:Food[];
 food2:Food;
-  constructor(private service:CartService) { 
+temp;
+
+
+
+
+
+order:Order;
+
+  constructor(private service:CartService,private service2:OrderService) { 
     this.foods1=[];
+    this.order=new Order();
   }
 
   ngOnInit() {
@@ -36,11 +47,40 @@ food2:Food;
 
   deleteCart(id){
     this.service.deleteCart(id).subscribe(res=>{
+      console.log(id);
       console.log(res);
       this.refreshCart();
       
     })
-  }
+    
+ }
+ public addtoorder(id)
+
+ { 
+   alert("added to cart successfully")
+    console.log(id);
+   this.service.getcartitembyid(id).subscribe(res=>{
+ 
+     this.temp=res;
+     this.order.customer=this.temp.customer;
+     this.order.food=this.temp.foodList;
+     console.log(this.temp);
+     console.log(this.temp.foodList);
+     this.service2.addOrder(this.order).subscribe(res=>{
+       console.log(this.order);
+      
+      
+       this.order=new Order();
+     });
+
+
+   });
+  
+
+ }
+
+
+
 
 
 }
