@@ -55,7 +55,7 @@
 
     
     
- # Team Members
+ # Contributors
   * Kesa Gaurav
   * Himanshu
   * Satish
