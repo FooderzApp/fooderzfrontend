@@ -16,7 +16,7 @@ export class ViewfooditemsComponent implements OnInit {
    cart:Cart;
   food:Food;
 
-   foods:Food[];
+ 
 
   id:number;
 
@@ -33,7 +33,13 @@ export class ViewfooditemsComponent implements OnInit {
     this.refreshEmployee();
     }
 
-
+    refreshFood(){
+      this.service.getAllFoods().subscribe(res=>{
+      //  console.log("hii");
+        this.foods=res;
+        this.router.navigate(['/viewfooditems'])
+    })
+    }
 
     refreshEmployee(){
       this.service.getAllFoods().subscribe(res=>{
@@ -53,26 +59,20 @@ export class ViewfooditemsComponent implements OnInit {
 }
 
 
-refreshFood(){
-  this.service.getAllFoods().subscribe(res=>{
-  //  console.log("hii");
-    this.foods=res;
-    this.router.navigate(['/viewfooditems'])
-})
-}
 
-public addCart(cart:Cart){
-  this.service1.addCart(this.cart).subscribe(res=>{
-    this.cart=new Cart();
-    console.log(res);
-    this.router.navigate(['/viewcart']);
+
+// public addCart(cart:Cart){
+//   this.service1.addCart(this.cart).subscribe(res=>{
+//     this.cart=new Cart();
+//     console.log(res);
+//     this.router.navigate(['/viewcart']);
     
-  })
-  // this.router.navigate(['/viewcart']);
+//   })
+//   // this.router.navigate(['/viewcart']);
   
-}
+// }
 
 
-}
+
 
 

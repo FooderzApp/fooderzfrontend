@@ -23,10 +23,10 @@ import { AddfoodComponent } from './addfood/addfood.component';
 import { FooddashboardComponent } from './fooddashboard/fooddashboard.component';
 import { ViewfooditemsComponent } from './viewfooditems/viewfooditems.component';
 
-import { FoodcrudService } from './foodcrud.service';
-import { ViewcartComponent } from './viewcart/viewcart.component';
-import { AddcartComponent } from './addcart/addcart.component';
-import { CartService } from './cart.service';
+// import { FoodcrudService } from './foodcrud.service';
+// import { ViewcartComponent } from './viewcart/viewcart.component';
+// import { AddcartComponent } from './addcart/addcart.component';
+// import { CartService } from './cart.service';
 
 import { EmployeecrudsComponent } from './employeecruds/employeecruds.component';
 
@@ -60,10 +60,10 @@ import { FoodcrudService } from './foodcrud.service';
     FooddashboardComponent,
     ViewfooditemsComponent,
 
-    ViewcartComponent,
-    AddcartComponent,
+    // ViewcartComponent,
+    // AddcartComponent,
 
-    EmployeecrudsComponent,
+    // EmployeecrudsComponent,
 
     ViewcartComponent,
     AddcartComponent,
