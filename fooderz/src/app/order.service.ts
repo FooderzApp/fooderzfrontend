@@ -25,6 +25,6 @@ export class OrderService {
   }
   public deleteorder(id:number):Observable<any>
   {
-    return this.http.delete(this.url+`/${id}`);
+    return this.http.delete(this.url + `${id}`);
   }
 }

@@ -10,6 +10,7 @@
             <th>foodPrice</th>
             <th>avatar</th>
             <th>delete</th>
+            <th>order</th>
         </tr>
     </thead>
     <tbody>
@@ -20,12 +21,13 @@
             <td>{{carts.foodList.price}}</td>
             <td>{{carts.foodList.avatar}}</td>
             <td><button class="btn btn-primary" (click)="deleteCart(carts.cartId)">delete</button></td>
+            <th><button class="btn btn-primary" (click)="addtoorder(carts.cartId)">order</button></th>
         </tr>
     </tbody>
 </table>
 
 
-<h1>View Cart Details</h1>
+<!-- <h1>View Cart Details</h1>
 <button class="anchor" routerLink="/vieworders">orders</button>
 <table class="table table-light">
     <thead class="thead-light">
@@ -57,4 +59,4 @@
 
 
 
-
+ -->
