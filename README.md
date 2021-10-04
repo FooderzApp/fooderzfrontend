@@ -17,7 +17,7 @@
     
      
   # Technologies Used
-    Angular
+    Angular 8
     Java
     Spring Boot
     Junit
@@ -27,6 +27,11 @@
     Karma
     Jasmine
     Spring
+    Lombok
+    Boostrap
+    HTML
+    CSS
+    Javascript
     
 #  Features
 1. The customer can register and also the employee login 
